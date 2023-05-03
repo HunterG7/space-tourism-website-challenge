@@ -9,6 +9,9 @@
 .page-wrapper {
     background-image: url("/assets/images/home/background-home-desktop.jpg");
     font-family: Bellefair, sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
 }
 header.container {
     height: 20vh;
@@ -37,6 +40,15 @@ nav p {
 nav a {
     padding: 0 10px;
     font-weight: 400;
+}
+.nav-item {
+    height: 100%;
+}
+.nav-item.active {
+    border-bottom: 1px solid #fff;
+}
+.nav-item:hover {
+    border-bottom: 1px solid rgba(255, 255, 255, 50%);
 }
 .header-line {
     position: absolute;
@@ -74,17 +86,24 @@ section .column {
     max-width: 78%;
 }
 
-.explore-circle {
-    height: 274px;
-    width: 274px;
+.explore-circle, .explore-circle-hover {
     position: absolute;
     background-color: white;
     border-radius: 50%;
-    right: 15%;
-    bottom: 15%;
+}
+.explore-circle {
+    height: 274px;
+    width: 274px;
     display: flex;
     align-items: center;
     justify-content: center;
+    right: 15%;
+    bottom: 15%;
+}
+.explore-circle-hover {
+    height: 450px;
+    width: 450px;
+    opacity: 25%;
 }
 .explore-circle p {
     font-size: 32px;
@@ -96,9 +115,4 @@ section .column {
     position: absolute;
     bottom: 0;
     gap: 0;
-}
-.nav-listener p{
-    border: 1px solid #fff;
-    width: inherit;
-    margin: 0 20px;
 }
