@@ -1,0 +1,104 @@
+:root {
+    --secondary: #D0D6F9;
+
+}
+@font-face {
+    font-family: Bellefair;
+    src: url("/assets/Bellefair-Regular.ttf");
+}
+.page-wrapper {
+    background-image: url("/assets/images/home/background-home-desktop.jpg");
+    font-family: Bellefair, sans-serif;
+}
+header.container {
+    height: 20vh;
+    position: relative;
+}
+section {
+    height: 90vh;
+    width: 50vw;
+}
+nav {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 5%);
+    height: 96px;
+    color: #fff;
+}
+.nav-col {
+    flex: 1 0 18vw;
+}
+nav .row {
+    gap: 40px;
+}
+nav p {
+    font-size: 19px;
+    font-weight: 700;
+}
+nav a {
+    padding: 0 10px;
+    font-weight: 400;
+}
+.header-line {
+    position: absolute;
+    top: 50%;
+    transform: scaleY(50%);
+    left: 10%;
+    border: 1px solid rgba(255, 255, 255, 25%);
+    width: 35vw;
+    z-index: 99;
+}
+.logo-wrapper {
+    margin-left: 7%;
+}
+section h2, section p {
+    color: var(--secondary);
+    font-weight: 400;
+}
+section h2 {
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+section p {
+    font-size: 18px;
+}
+section h1 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 150px;
+}
+section .row {
+    padding-left: 19%;
+}
+section .column {
+    gap: 5px;
+    max-width: 78%;
+}
+
+.explore-circle {
+    height: 274px;
+    width: 274px;
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    right: 15%;
+    bottom: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.explore-circle p {
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    opacity: 30%;
+}
+.nav-listener {
+    position: absolute;
+    bottom: 0;
+    gap: 0;
+}
+.nav-listener p{
+    border: 1px solid #fff;
+    width: inherit;
+    margin: 0 20px;
+}
