@@ -1,38 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <title>Frontend Mentor | Space tourism website</title>
+
+    <link rel="stylesheet" href="css/resets.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div class="page-wrapper destination">
+    <!-- header -->
+    <header class="container justify-center">
+        <div class="row no-padding full-width">
+            <div class="column header-line"></div>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+            <div class="column justify-center">
+                <div class="logo-wrapper">
+                    <img src="assets/images/shared/logo.svg" alt="Logo">
+                </div>
+            </div>
 
-  01 Pick your destination
+            <nav class="column justify-center nav-col">
+                <div class="row justify-center align-center grow">
+                    <div class="column justify-center shrink nav-item active">
+                        <p>00<a href="index.html">HOME</a></p>
+                    </div>
+                    <div class="column justify-center shrink nav-item">
+                        <p>01<a href="destination.html">DESTINATION</a></p>
+                    </div>
+                    <div class="column justify-center shrink nav-item">
+                        <p>02<a href="crew.html">CREW</a></p>
+                    </div>
+                    <div class="column justify-center shrink nav-item">
+                        <p>03<a href="technology.html">TECHNOLOGY</a></p>
+                    </div>
+                </div>
+                <div class="row justify-center nav-listener">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-  Moon
-  Mars
-  Europa
-  Titan
+    <!-- main content -->
+    <main class="container grow">
+        <div class="row no-padding">
+            <h2><span>01</span>PICK YOUR DESTINATION</h2>
+        </div>
 
-  Europa
+        <div class="row justify-center grow no-padding planet-row">
+            <div class="column justify-center align-center planet-img-box">
+                <div class="img-wrapper">
+                    <img src="assets/images/destination/image-europa.png" alt="Europa">
+                </div>
+            </div>
 
-  The smallest of the four Galilean moons orbiting Jupiter, Europa is a 
-  winter lover’s dream. With an icy surface, it’s perfect for a bit of 
-  ice skating, curling, hockey, or simple relaxation in your snug 
-  wintery cabin.
+            <div class="column planet-info-col">
+                <div id="planet-nav" class="row no-padding">
+                    <p id="moon">MOON</p>
+                    <p id="mars">MARS</p>
+                    <p id="europa" class="active">EUROPA</p>
+                    <p id="titan">TITAN</p>
+                </div>
+                <div class="column planet-info">
+                    <h3>EUROPA</h3>
+                    <p>
+                        The smallest of the four Galilean moons orbiting Jupiter, Europa is a
+                        winter lover’s dream. With an icy surface, it’s perfect for a bit of
+                        ice skating, curling, hockey, or simple relaxation in your snug
+                        wintery cabin.
+                    </p>
+                    <div class="row statistics-row">
+                        <div class="column statistics">
+                            <p>AVG. DISTANCE</p>
+                            <h4>384,400 KM</h4>
+                        </div>
+                        <div class="column statistics">
+                            <p>EST. TRAVEL TIME</p>
+                            <h4>3 DAYS</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
 
-  Avg. distance
-  628 mil. km
-
-  Est. travel time
-  3 years
+<script src="js/main.js"></script>
 </body>
 </html>
