@@ -63,6 +63,7 @@ nav a {
 }
 .logo-wrapper {
     margin-left: 7%;
+    cursor: pointer;
 }
 section h2, section p {
     color: var(--secondary);
@@ -265,6 +266,12 @@ main span {
     color: #fff;
     font-weight: 400;
     font-size: 28px;
+}
+.technology-circle.active {
+    background-color: white;
+}
+.technology-circle.active p {
+    color: #000;
 }
 .technology-circle:hover {
     border-color: #fff;
