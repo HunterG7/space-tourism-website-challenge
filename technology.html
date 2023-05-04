@@ -1,36 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
-  <title>Frontend Mentor | Space tourism website</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <title>Frontend Mentor | Space tourism website</title>
 
-  <link rel="stylesheet" href="css/resets.css">
-  <link rel="stylesheet" href="css/layout.css">
-  <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/resets.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div class="page-wrapper technology">
+    <div class="technology-img-wrapper">
+        <img src="assets/images/technology/image-launch-vehicle-portrait.jpg" alt="Launch Vehicle">
+    </div>
+    <!-- header -->
+    <header class="container justify-center">
+        <div class="row no-padding full-width">
+            <div class="column header-line"></div>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+            <div class="column justify-center">
+                <div class="logo-wrapper">
+                    <img src="assets/images/shared/logo.svg" alt="Logo">
+                </div>
+            </div>
 
-  03 Space launch 101
+            <nav class="column justify-center nav-col">
+                <div class="row justify-center align-center grow">
+                    <div class="column justify-center shrink nav-item active">
+                        <p>00<a href="index.html">HOME</a></p>
+                    </div>
+                    <div class="column justify-center shrink nav-item">
+                        <p>01<a href="destination.html">DESTINATION</a></p>
+                    </div>
+                    <div class="column justify-center shrink nav-item">
+                        <p>02<a href="crew.html">CREW</a></p>
+                    </div>
+                    <div class="column justify-center shrink nav-item">
+                        <p>03<a href="technology.html">TECHNOLOGY</a></p>
+                    </div>
+                </div>
+                <div class="row justify-center nav-listener">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-  1
-  2
-  3
+    <!-- main content -->
+    <main class="container grow">
+        <div class="row no-padding">
+            <h2><span>03</span>SPACE LAUNCH 101</h2>
+        </div>
 
-  The terminology...
-  Space capsule
+        <div class="row grow no-padding technology-content-row">
+            <div class="column shrink technology-nav">
+                <div class="row justify-center align-center technology-circle">
+                    <p>1</p>
+                </div>
+                <div class="row justify-center align-center technology-circle">
+                    <p>2</p>
+                </div>
+                <div class="row justify-center align-center technology-circle">
+                    <p>3</p>
+                </div>
+            </div>
 
-  A space capsule is an often-crewed spacecraft that uses a blunt-body reentry 
-  capsule to reenter the Earth's atmosphere without wings. Our capsule is where 
-  you'll spend your time during the flight. It includes a space gym, cinema, 
-  and plenty of other activities to keep you entertained.
+            <div class="column technology-info">
+                <div>
+                    <h4>THE TERMINOLOGY...</h4>
+                    <h3>LAUNCH VEHICLE</h3>
+                </div>
+                <p>
+                    A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!
+                </p>
+            </div>
+        </div>
+    </main>
+
+</div>
+
+
+
+1
+2
+3
+
+The terminology...
+Space capsule
+
+A space capsule is an often-crewed spacecraft that uses a blunt-body reentry
+capsule to reenter the Earth's atmosphere without wings. Our capsule is where
+you'll spend your time during the flight. It includes a space gym, cinema,
+and plenty of other activities to keep you entertained.
 
 <script src="js/main.js"></script>
 </body>

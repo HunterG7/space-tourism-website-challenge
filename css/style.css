@@ -8,6 +8,9 @@
 body {
     font-family: Bellefair, sans-serif;
 }
+.page-wrapper {
+    background-size: cover;
+}
 .page-wrapper.index{
     background-image: url("/assets/images/home/background-home-desktop.jpg");
 }
@@ -190,11 +193,13 @@ main span {
 /*-------------------*/
 .page-wrapper.crew {
     background-image: url('/assets/images/crew/background-crew-desktop.jpg');
-    background-size: cover;
+}
+.crew main {
+    gap: 120px;
 }
 .crew-col {
     gap: 10px;
-    /*padding-bottom: 50px;*/
+    padding-top: 40px;
 }
 .crew-col h3, .crew-col h2, .crew-col p {
     font-weight: 400;
@@ -213,10 +218,79 @@ main span {
     color: var(--secondary);
     font-size: 18px;
     max-width: 28vw;
+    height: 100px;
 }
 .crew-nav-btn {
     height: 15px;
     width: 15px;
     background-color: rgba(255, 255, 255, 17%);
     border-radius: 9999px;
+    cursor: pointer;
+}
+.crew-nav-btn:hover {
+    background-color: rgba(255, 255, 255, 50%);
+}
+.crew-nav-btn.active {
+    background-color: #fff;
+}
+.img-wrapper {
+    position: absolute;
+    bottom: 0;
+    right: 150px;
+}
+/*-------------------*/
+/* Technology Page */
+/*-------------------*/
+.page-wrapper.technology {
+    background-image: url('/assets/images/technology/background-technology-desktop.jpg');
+}
+.technology main {
+    gap: 10rem;
+}
+.technology-content-row {
+    gap: 80px;
+}
+.technology-nav {
+    gap: 50px;
+}
+.technology-circle {
+    height: 80px;
+    width: 80px;
+    border-radius: 9999px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 25%);
+    cursor: pointer;
+}
+.technology-circle p {
+    color: #fff;
+    font-weight: 400;
+    font-size: 28px;
+}
+.technology-circle:hover {
+    border-color: #fff;
+}
+.technology-info {
+    gap: 18px;
+}
+.technology-info h4, .technology-info h3, .technology-info p {
+    font-weight: 400;
+}
+.technology-info h4 {
+    font-size: 16px;
+    letter-spacing: 3px;
+    color: #fff;
+}
+.technology-info h3{
+    font-size: 56px;
+    color: #fff;
+}
+.technology-info p{
+    color: var(--secondary);
+    font-size: 18px;
+    width: 24rem;
+}
+.technology-img-wrapper {
+    position: absolute;
+    right: 0;
+    bottom: 5rem;
 }
