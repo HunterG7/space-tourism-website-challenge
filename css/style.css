@@ -46,7 +46,7 @@ nav a {
     height: 100%;
     border-bottom: 2px solid transparent;
 }
-.nav-item.active {
+.nav-item.active, .nav-item.active:hover {
     border-bottom: 2px solid #fff;
 }
 .nav-item:hover {
@@ -152,7 +152,7 @@ main span {
     font-size: 19px;
     cursor: pointer;
 }
-#planet-nav p.active {
+#planet-nav p.active, #planet-nav p.active:hover {
     border-bottom: 1px solid #fff;
 }
 #planet-nav p:hover {
@@ -231,7 +231,7 @@ main span {
 .crew-nav-btn:hover {
     background-color: rgba(255, 255, 255, 50%);
 }
-.crew-nav-btn.active {
+.crew-nav-btn.active, .crew-nav-btn.active:hover {
     background-color: #fff;
 }
 .img-wrapper {
@@ -267,7 +267,7 @@ main span {
     font-weight: 400;
     font-size: 28px;
 }
-.technology-circle.active {
+.technology-circle.active, .technology-circle.active:hover {
     background-color: white;
 }
 .technology-circle.active p {
